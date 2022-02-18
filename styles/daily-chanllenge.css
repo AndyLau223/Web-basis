@@ -17,6 +17,10 @@ h1 {
   color: rgb(88, 69, 65);
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: underline;
 }
