@@ -1,3 +1,2 @@
-# Web-basis
-
-This is a practical project of web develoment basis.
+# Practical Project 
+This practical project is for execcising font-end developing skills. 
