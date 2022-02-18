@@ -1,7 +1,9 @@
 ol {
   list-style: none;
+
 }
 li {
   /* control list style */
   list-style: none;
+  color: orangered;
 }
