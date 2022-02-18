@@ -26,11 +26,6 @@ p {
   text-align: center;
 }
 
-a {
-  color: red;
-  text-decoration: none;
-}
-
 #todays-chanllenge {
   color: rgb(170, 96, 83);
   font-weight: bold;
