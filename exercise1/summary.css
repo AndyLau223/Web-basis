@@ -28,6 +28,8 @@ ol {
   background-color: blueviolet;
   margin: auto;
   text-align: left;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 li p {
@@ -44,8 +46,20 @@ a:hover {
     text-decoration: underline;
 }
 
+footer {
+  margin: 20px auto 20px auto;
+}
+
 footer a {
   color: blueviolet;
+  background-color: rgb(251, 253, 104);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer a:hover {
+  background-color: orange;
 }
 
 footer p {
