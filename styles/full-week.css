@@ -9,7 +9,7 @@ h1 {
 }
 
 #description {
-  margin-bottom: 36px;
+  margin: 12px;
 }
 
 /* header p {
@@ -24,6 +24,8 @@ a {
   font-size: 24px;
   text-decoration: none;
   border: 1px solid rgb(167, 1, 78);
+  display: inline-block;
+  margin: 0;
 }
 
 a:hover {
@@ -42,6 +44,7 @@ li {
   margin: 32px;
   padding: 16px;
   border-radius: 16px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 2);
 }
 
 h2 {
