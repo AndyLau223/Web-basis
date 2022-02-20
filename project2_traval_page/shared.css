@@ -33,7 +33,7 @@ header li {
 
 #header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 15px 60px;
   position: absolute;
