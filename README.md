@@ -5,5 +5,5 @@ The website is running on Netlify. Please feel free to visit the page, if you li
 https://andy223.netlify.app/index.html
 
 
-# run it on your machine
+# Run it on your local machine
 Leverage Visual Studio 'Open with Live Server', then you will see it through your broswer. No need to set up anything.
