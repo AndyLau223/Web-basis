@@ -54,6 +54,6 @@ main li img {
   color: rgb(22, 211, 228);
 }
 
-.actions a:hover {
+.actions nav a:hover {
   background-color: rgb(235, 253, 255);
 }
