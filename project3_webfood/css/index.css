@@ -5,12 +5,12 @@ body {
 }
 
 #main-header {
-  height: 80px;
+  height: 5rem;
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 5%;
 }
 
 #main-header ul {
@@ -56,12 +56,13 @@ main h1 {
   background-color: rgb(196, 136, 63);
   border-radius: 6px;
   overflow: hidden;
+  list-style: none;
 }
 
 .food-item-content {
   padding: 16px;
   text-align: center;
-
+  
 }
 
 .btn {
@@ -82,7 +83,7 @@ main h1 {
 }
 
 #logo {
-  font-size: 45px;
+  font-size: 1.5rem;
   padding: 10px;
   color: orange;
   font-weight: bold;
