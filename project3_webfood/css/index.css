@@ -4,6 +4,8 @@ body {
   background-color: rgb(44, 41, 48);
 }
 
+
+
 #main-header {
   height: 80px;
   background-color: black;
@@ -61,7 +63,7 @@ main h1 {
 .food-item-content {
   padding: 16px;
   text-align: center;
-
+  
 }
 
 .btn {
