@@ -1,0 +1,24 @@
+p {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  color: #543b4b;
+}
+h1 {
+  /* if 'Anek Latin couldn't be found, then browser will use the alternative font. */
+  font-family: "Anek Latin", sans-serif;
+  text-align: center;
+  color: red;
+}
+a {
+  color: rgb(100, 150, 100);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#todays-challenge {
+  color: coral;
+  font-weight: bold;
+  font-size: 25px;
+}
