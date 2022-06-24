@@ -1,0 +1,20 @@
+img {
+  width: 200px;
+  height: 200px;
+  /* make the picture be a circle instead of square */
+  border-radius: 100px;
+}
+
+p {
+  color: #543b4b;
+}
+h1 {
+  /* if 'Anek Latin couldn't be found, then browser will use the alternative font. */
+  color:grey;
+}
+
+#todays-challenge {
+  color: coral;
+  font-weight: bold;
+  font-size: 25px;
+}
