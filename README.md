@@ -1,1 +1,1 @@
-this is the link of this demo project. https://andy223.netlify.app/
+This is the demo projects along with my learning process of web design.
