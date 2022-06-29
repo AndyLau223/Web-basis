@@ -46,3 +46,41 @@
 #hero-content a:hover {
     background-color: rgb(221, 250, 0);
 }
+
+#highlights h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(59, 65, 64);
+    margin: 24px 0px;
+}
+
+#destinations {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.destination {
+    margin: 0px 20px;
+}
+
+.destination img{
+    height: 200px;
+    width: 100%;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    border: 10px;
+    object-fit: contain;
+}
+
+.destination p {
+    text-align: center;
+    margin: 5px 20px;
+}
+
+.destination strong {
+    color: rgb(0, 160, 167);
+}
