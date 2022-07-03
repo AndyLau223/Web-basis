@@ -1,4 +1,4 @@
-This is the demo projects along with my learning process of web design.
+This repo would the beginning of my front end journey since I'm already working as back end developer more than two years therefore I'd start to explore myself into different kinds of tech of web development.
 
 project 1: https://andy223.netlify.app/01-html/index.html
 <br/>
