@@ -1,6 +1,5 @@
 body {
   background-color: rgb(31, 30, 30);
-  font-family: "Courier New", Courier, monospace;
 }
 
 form {
@@ -47,4 +46,13 @@ button {
 button:hover {
   background-color: rgb(32, 2, 63);
   border-color: rgb(32, 2, 63);
+}
+
+.form-control-inline {
+  display: flex;
+}
+
+.form-control-inline input {
+  width: auto;
+  margin: 0.5rem;
 }
