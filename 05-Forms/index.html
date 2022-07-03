@@ -11,60 +11,115 @@
   <body>
     <form action="/" method="GET">
       <!-- "for" attribute: to specific which input(for -equal to> input's id) belongs to the label -->
-      <label for="user-name">Your name</label>
-      <input type="text" name="user-name" id="user-name" />
+      <section>
+        <h2>Your personal details</h2>
+        <ul>
+          <li>
+            <label for="user-name">Your name</label>
+            <input type="text" name="user-name" id="user-name" />
+          </li>
+          <li>
+            <label for="user-email">Your email address</label>
+            <input type="email" name="user-email" id="user-email" />
+          </li>
+          <li>
+            <label for="user-pwd">Your password</label>
+            <input type="password" name="user-pwd" id="user-pwd" />
+          </li>
+        </ul>
+      </section>
 
-      <label for="user-email">Your email address</label>
-      <input type="email" name="user-email" id="user-email" />
+      <section>
+        <h2>More details</h2>
+        <ul>
+          <label for="favroite-color">Your favroite color?</label>
+          <select id="favroite-color" name="favorite-color">
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+          </select>
+          <li>
+            <label for="user-age">Your age</label>
+            <input type="number" step="1" name="user-age" id="user-age" />
+          </li>
+          <li>
+            <label for="user-birthdate">Your birthdate</label>
+            <input type="date" name="user-birthdate" id="user-birthdate" />
+          </li>
+        </ul>
+      </section>
 
-      <label for="user-age">Your age</label>
-      <input type="number" step="1" name="user-age" id="user-age" />
+      <section>
+        <h2>Message</h2>
+        <ul>
+          <li>
+            <label for="usermessage">Your message</label>
+            <textarea id="usermessage" name="message"></textarea>
+          </li>
+        </ul>
+      </section>
 
-      <label for="user-pwd">Your password</label>
-      <input type="password" name="user-pwd" id="user-pwd" />
+      <section>
+        <h2>How should we verify your account?</h2>
+        <!-- name attribute is used for server to identify the content -->
+        <ul>
+          <li class="form-control-inline">
+            <input
+              type="radio"
+              name="verify"
+              id="verify-text-message"
+              value="text-message"
+            />
+            <label for="verify-text-message">Via text message (SMS)</label>
+          </li>
 
-      <label for="user-birthdate">Your birthdate</label>
-      <input type="date" name="user-birthdate" id="user-birthdate" />
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-phone" value="phone" />
+            <label for="verify-phone">Via phone call</label>
+          </li>
+          <li class="form-control-inline">
+            <input type="radio" name="verify" id="verify-email" value="email" />
+            <label for="verify-email">Via email</label>
+          </li>
+        </ul>
+      </section>
 
-      <hr />
-      <h2>How should we verify your account?</h2>
-      <!-- name attribute is used for server to identify the content -->
-      <div class="form-control-inline">
-        <input
-          type="radio"
-          name="verify"
-          id="verify-text-message"
-          value="text-message"
-        />
-        <label for="verify-text-message">Via text message (SMS)</label>
-      </div>
+      <section>
+        <h2>How should we contact you</h2>
+        <ul>
+          <li class="form-control-inline">
+            <input
+              type="checkbox"
+              id="contract-email"
+              name="contact"
+              value="email"
+            />
+            <label for="contact-email">Contact me via email</label>
+          </li>
 
-      <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-phone" value="phone" />
-        <label for="verify-phone">Via phone call</label>
-      </div>
-      <div class="form-control-inline">
-        <input type="radio" name="verify" id="verify-email" value="email" />
-        <label for="verify-email">Via email</label>
-      </div>
+          <li class="form-control-inline">
+            <input
+              type="checkbox"
+              id="contract-phone"
+              name="contact"
+              value="phone"
+            />
+            <label for="contact-phone">Contact me via phone</label>
+          </li>
+        </ul>
+      </section>
 
-      <div class="form-control-inline">
-        <input type="checkbox" id="agree-terms" name="terms" />
-        <label for="agree-terms" >Agree to terms?</label>
-      </div>
+      <section>
+        <hr>
+        <ul>
+          <li class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to terms?</label>
+          </li>
+        </ul>
+      </section>
 
-
-      <div class="form-control-inline">
-        <input type="checkbox" id="contract-email" name="contact" value="email" />
-        <label for="contact-email" >Contact me via email</label>
-      </div>
-
-      <div class="form-control-inline">
-        <input type="checkbox" id="contract-phone" name="contact" value="phone"/>
-        <label for="contact-phone" >Contact me via phone</label>
-      </div>
-
-      <button>Submit</button>
+      <section><button>Submit</button></section>
     </form>
   </body>
 </html>
