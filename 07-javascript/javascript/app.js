@@ -8,4 +8,11 @@ let job = {
   salary: 50000,
 };
 
+age = 45;
 
+// function
+// passing data into functions with parameters
+function calculateAdultYears(userAge) {
+  return userAge - 18;
+}
+alert(calculateAdultYears(18));
