@@ -16,15 +16,24 @@
         <ul>
           <li>
             <label for="user-name">Your name</label>
-            <input type="text" name="user-name" id="user-name" />
+            <!-- require attribute means that this field must not be empty -->
+            <input type="text" name="user-name" id="user-name" required />
           </li>
           <li>
             <label for="user-email">Your email address</label>
-            <input type="email" name="user-email" id="user-email" />
+            <input type="email" name="user-email" id="user-email" required />
           </li>
           <li>
             <label for="user-pwd">Your password</label>
-            <input type="password" name="user-pwd" id="user-pwd" />
+            <!-- minlength means the minium length -->
+            <input
+              type="password"
+              name="user-pwd"
+              id="user-pwd"
+              required
+              minlength="7"
+              maxlength="20"
+            />
           </li>
         </ul>
       </section>
@@ -40,11 +49,20 @@
           </select>
           <li>
             <label for="user-age">Your age</label>
-            <input type="number" step="1" name="user-age" id="user-age" />
+            <!-- min/max means the value limitation -->
+            <input
+              type="number"
+              step="1"
+              name="user-age"
+              id="user-age"
+              required
+              min="18"
+              max="125"
+            />
           </li>
           <li>
             <label for="user-birthdate">Your birthdate</label>
-            <input type="date" name="user-birthdate" id="user-birthdate" />
+            <input type="date" name="user-birthdate" id="user-birthdate" required min="1921-01-01" max="2033-01-01" />
           </li>
         </ul>
       </section>
@@ -69,6 +87,7 @@
               name="verify"
               id="verify-text-message"
               value="text-message"
+              required
             />
             <label for="verify-text-message">Via text message (SMS)</label>
           </li>
@@ -110,7 +129,7 @@
       </section>
 
       <section>
-        <hr>
+        <hr />
         <ul>
           <li class="form-control-inline">
             <input type="checkbox" id="agree-terms" name="terms" />
@@ -119,7 +138,10 @@
         </ul>
       </section>
 
-      <section><button>Submit</button></section>
+      <section>
+        <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+      </section>
     </form>
   </body>
 </html>
