@@ -16,3 +16,13 @@ function calculateAdultYears(userAge) {
   return userAge - 18;
 }
 alert(calculateAdultYears(18));
+
+let person = {
+  name: "andy", // property
+  greet() {
+    // method
+    return "Hello, how are you?";
+  },
+};
+
+console.log(person.greet());
