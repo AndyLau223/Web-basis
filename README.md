@@ -9,3 +9,5 @@ project 3: https://andy223.netlify.app/03-layout/index.html
 project 4: https://andy223.netlify.app/04-responsive_design/index.html
 <br/>
 project 5: https://andy223.netlify.app/05-forms/index.html
+<br />
+project 6: https://andy223.netlify.app/13-game-exercise/index.html
