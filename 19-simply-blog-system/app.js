@@ -2,7 +2,7 @@ const path = require('path');
 
 const express = require('express');
 
-const blogRoutes = require('./routes/blog'); // use this file
+const blogRoutes = require('./routes/blog'); // use router that's defined by us.
 
 const app = express();
 
