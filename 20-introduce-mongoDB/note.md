@@ -9,3 +9,16 @@ db.restaurants.updateOne({_id: ObjectId("xxx")}, {$set: { name: "This is a new n
 
 # delete many that's matched condition
 db.restaurants.deleteMany({_id: ObjectId("xxx")})
+
+# delete all 
+db.restaurants.deleteMany({});
+
+
+# Planning our database structure
+
+Collections: 
+    1. Posts --> id, title, summary, body, date
+    2. Authors --> id, name, email
+
+
+
