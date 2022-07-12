@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/styles/base.css" />
     <link rel="stylesheet" href="/styles/forms.css" />
     <link rel="stylesheet" href="/styles/posts.css" />
-    <script src="../comment/comments.js" defer></script>
+    <script src="/scripts/comments.js" defer></script>
   </head>
 
   <body>
@@ -23,31 +23,15 @@
         <p id="body"><%= post.body %></p>
       </section>
       <section id="comments">
-        <% if (!comments) { %>
         <p>
           This post might have comments. You can load them if you want to view
           them.
         </p>
-        <button
-          id="load-comment-btn"
-          class="btn btn-alt"
-          data-postid="<%= post._id %>"
-        >
-          Load Comments
-        </button>
-        <% } else if (comments.length === 0) { %>
-        <p>No comments found.</p>
-        <% } else { %>
-        <ol>
-          <% for (const comment of comments) { %>
-          <li><%- include('includes/comment-item', { comment: comment }) %></li>
-          <% } %>
-        </ol>
-        <% } %>
+        <button id="load-comments-btn" class="btn btn-alt" data-postid="<%= post._id %>">Load Comments</button>
       </section>
       <section id="comments-form">
         <h2>Leave a comment</h2>
-        <form action="/posts/<%= post._id %>/comments" method="POST">
+        <form data-postid="<%= post._id %>">
           <div class="form-control">
             <label for="title">Comment title</label>
             <input type="text" id="title" name="title" required />

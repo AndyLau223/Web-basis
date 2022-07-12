@@ -1,4 +1,3 @@
-const { json } = require('express');
 const express = require('express');
 const mongodb = require('mongodb');
 
@@ -123,19 +122,19 @@ router.get('/posts/:id/comments', async function (req, res) {
     .find({ postId: postId })
     .toArray();
 
-  // encode data to json format
-  return res.json(comments);
+  res.json(comments);
 });
 
 router.post('/posts/:id/comments', async function (req, res) {
-  const postId = new ObjectId(req.params.id);
-  const newComment = {
-    postId: postId,
-    title: req.body.title,
-    text: req.body.text,
-  };
-  await db.getDb().collection('comments').insertOne(newComment);
-  res.redirect('/posts/' + req.params.id);
+  // const postId = new ObjectId(req.params.id);
+  // const newComment = {
+  //   postId: postId,
+  //   title: req.body.title,
+  //   text: req.body.text,
+  // };
+  // await db.getDb().collection('comments').insertOne(newComment);
+  // res.json({message: 'Comment added!'});
+  res.status(500).json({ message: 'Error!' });
 });
 
 module.exports = router;
